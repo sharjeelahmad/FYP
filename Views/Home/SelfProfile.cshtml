@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "profile";
+}
+
+
+
+<div style="margin-left:150px ;width:80%">
+    <h1 style="text-align:center">@ViewBag.tagline</h1>
+    <table id="table1">
+        <tr>
+            <td>
+                <img src="~/images/profile1.jpg" style=" border-radius: 50%; width: 200px; height: 200px;  border: 5px solid lightgreen;" />
+            </td>
+            <td>
+                <table id="table2">
+                    <tr>
+                        <td><h2>@ViewBag.name</h2></td>
+                    </tr>
+
+                    <tr>
+                        <td><h3>@ViewBag.profession</h3></td>
+
+                    </tr>
+                    <tr><td><a class="btn btn-primary col-md-5" href="">Jobs</a></td></tr>
+                </table>
+            </td>
+        <tr>
+            <td><img src="~/images/rating.png" style="padding:10px" /><hr /><p>@ViewBag.email</p><p>@ViewBag.phone</p></td>
+            <td><h3>Description</h3>@ViewBag.description</td>
+        </tr>
+
+        <td></td>
+        <td>
+
+            <table id="table3" style="margin-top:20px">
+                <tr>
+
+                    <h2>Certificates</h2>
+
+                </tr>
+                @* @foreach (var m in Model) { *@
+
+                <tr>
+                    <td>
+                <tr>
+                    <th style="padding:10px">Name</th>
+                    <td>@ViewBag.CourseName</td>
+                </tr>
+                <tr>
+                    <th style="padding:10px">Institute</th>
+                    <td>@ViewBag.InstitueName</td>
+                </tr>
+                <tr>
+                    <th style="padding:10px">Certificate</th>
+                    <td>@ViewBag.Certificate</td>
+                </tr>
+        </td>
+
+
+    </table>
+    @* }*@
+
+
+    <table>
+
+        <h2>Projects</h2>
+
+        @* @foreach (var m in Model){*@
+        <tr>
+
+            <th style="padding:10px">Name</th>
+            <td>@ViewBag.ProjectName</td>
+        </tr>
+        <tr>
+            <th style="padding:10px">Location</th>
+            <td>@ViewBag.ProjectLocation</td>
+        </tr>
+        <tr>
+            <th style="padding:10px">Feedback</th>
+            <td>@ViewBag.ProjectFeedback</td>
+        </tr>
+        @*}*@
+
+    </table>
+
+</div>
+

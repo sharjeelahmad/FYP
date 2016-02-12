@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Proposal";
+}
+
+<div style="margin-left:200px;margin-top:50px">
+    <h1>Job </h1>
+
+    <div class="row" style="margin-top:70px">
+        <div class="input-lg">
+            <label class="col-md-3"> Job Title</label>
+
+
+            <label class="col-md-8 " style="border-radius:5px">@ViewBag.Jobtitle</label>
+
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top:20px">
+        <div class="input-lg">
+            <label class="col-md-3"> Posted By</label>
+
+            <label class="col-md-8 " style="border-radius:5px">@ViewBag.client</label>
+        </div>
+    </div>
+    <div class="row" style="margin-top:20px">
+        <div class="input-lg">
+            <label class="col-md-3"> Job Location</label>
+
+            <label class="col-md-8 " style="border-radius:5px">@ViewBag.Joblocation</label>
+        </div>
+    </div>
+    <div class="row" style="margin-top:20px">
+        <div class="input-lg">
+            <label class="col-md-3"> Job Description</label>
+            <label class="col-md-8 " style="border-radius:5px">@ViewBag.Jobdescription</label>
+
+
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:20px">
+        <div class="input-lg">
+            <label class="col-md-3"> Proposal</label>
+            <textarea style="width:700px;height:100px"></textarea>
+
+
+        </div>
+    </div>
+    
+    
+
+    <div style="margin-top:80px">
+        <a href="AvailableJobs" class="col-md-offset-3 btn btn-primary">Submit Proposal</a>
+        <a href="AvailableJobs" class="btn btn-primary  ">Cancel Proposal</a>
+    </div>
+</div>
+
+

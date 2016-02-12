@@ -1,0 +1,206 @@
+﻿
+@{
+    ViewBag.Title = "mainPage";
+}
+
+@*1st Div*@
+<div class="container" style="width:100%">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color:black">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+                <img src="~/images/Plumber.jpg" alt="Chania" style=" width:100%; height:500px">
+                @*<div class="carousel-caption">
+                        <h3>Chania</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    </div>*@
+            </div>
+
+            <div class="item">
+                <img src="~/images/Mechanic.jpg" alt="Chania" style=" width:100%; height:500px">
+                @*<div class="carousel-caption">
+                        <h3>Chania</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    </div>*@
+            </div>
+
+            <div class="item">
+                <img src="~/images/tailor.jpg" alt="Flower" style=" width:100%; height:500px">
+                @*<div class="carousel-caption">
+                        <h3>Flowers</h3>
+                        <p>Beatiful flowers in Kolymbari, Crete.</p>
+                    </div>*@
+            </div>
+
+            <div class="item">
+                <img src="~/images/Electrition.jpg" alt="Flower" style=" width:100%; height:500px">
+                @*<div class="carousel-caption">
+                        <h3>Flowers</h3>
+                        <p>Beatiful flowers in Kolymbari, Crete.</p>
+                    </div>*@
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<br /><br />
+
+
+
+
+
+
+
+@*//2nd div*@
+<div class="row" style="width:100%; margin-left:5%; margin-top:5%;">
+    <div class="col-lg-7">
+        <h2 style=" margin-right:1%">Looking for a Worker?<a class="btn btn-md-4 btn-primary" href="AvailableWorkers" style="margin-left:320px" >Hire Worker</a></h2>
+        <p style="color: Black; margin-right: 1%">
+            SHIELD Security Services (Pvt) Ltd was formed in October 2004 under Section-32 of the Companies Ordnance Act 1984 (XLVII of 1984) by a group of experienced independent security specialists, who have trained and gained their experience from service within the Armed forces, Police and Civilian security sector.<br>
+
+            The aim of SHIELD Security is to provide highly trained, professional, fully vetted and ensured security operatives and teams for an extensive range of specialized security services. Giving total security solutions to both the public and private sectors and ensuring that our clients receive a security and consultancy service second to none.<br>
+
+            Security specialists such as Close protection and VIP/Executive security officers are often referred to as "Bodyguards" but the modern day Close Protection officer needs to be more than just the old fashioned "Bodyguard". Executives, VIP’s and Media personalities no longer tolerate the stereotypical untrained "giant" when it comes to personal safety, requiring their personal security operatives to be well mannered, intelligent and able to discreetly deal with any situation should it arise.
+            “The Professionals” is committed to provide the full range of direct sales as Air Line Handlers, Travel Agent, Tours Operator, Cargo, Petroleum, Courier. We offer Consultancy services in the sector of Education, Immigration, Insurances brokerage. We are dedicated to contribute a professional and personalized services.
+        </p>
+    </div>
+    <div class="col-lg-3">
+        <img src="~/images/workerseeker1.jpg" height="300" width="300" style="margin-top: 20%" />
+    </div>
+</div>
+
+
+@*3rd div*@
+
+
+
+
+
+
+
+
+
+
+<div style="width:100%; height:500px; border-width:thick;margin-left:75px;margin-top:5%">
+<table>
+    <tr>
+        
+        <td style="width:500px;height:250px"><div><img src="~/images/ccarpenter.jpg" style="width:200px;height:200px;border-radius:50%"/></div><a href="AvailableJobs"class="btn btn-primary"  style="margin-left:55px;width:90px;border-radius:5px">Carpenter</a></td>
+        <td style="width:500px;height:250px"><div><img src="~/images/celectrition.jpg" style="width:200px;height:200px;border-radius:50%" /></div><a href="AvailableJobs" class="btn btn-primary" style="margin-left:55px;width:90px;border-radius:5px">Electrition</a></td>
+        <td style="width:500px;height:250px"><div><img src="~/images/cmechanic.jpg" style="width: 200px; height: 200px; border-radius: 50%; " /></div><a href="AvailableJobs" class="btn btn-primary" style="margin-left:55px;width:90px;border-radius:5px">Mechanic</a></td>
+        <td></td>   
+    </tr>
+    <tr style="margin-top:20px;margin-left:60px">
+        <td style="width:500px;height:250px"><div><img src="~/images/ctailor.jpg" style="width:200px;height:200px;border-radius:50%" /></div><a href="AvailableJobs" class="btn btn-primary" style="margin-left:55px;width:90px;border-radius:5px">Tailor</a></td>
+        <td style="width:500px;height:250px"><div><img src="~/images/cplumber.jpg" style="width:200px;height:200px;border-radius:50%" /></div><a href="AvailableJobs" class="btn btn-primary" style="margin-left:55px;width:90px;border-radius:5px">Plumber</a></td>
+        <td style="width:500px;height:250px"><div><img src="~/images/cwhitewasher.jpg" style="width:200px;height:200px;border-radius:50%" /></div><a href="AvailableJobs" class="btn btn-primary" style="margin-left:55px;width:110px;border-radius:5px">White Washer</a></td>
+    </tr>
+    <tr>
+        
+    </tr>
+</table>   
+ </div>
+    
+
+@*
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i> Find Job</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+*@
+
+
+    @*4th div*@
+
+
+<div class="row" style="width:100%; margin-left:5%; margin-top:5%;">
+    <div class="col-lg-7">
+        <h2 style=" margin-right:1%">Job Seeker<a class="btn btn-md-4 btn-primary" href="AvailableJobs" style="margin-left:650px">Find Job</a></h2>
+        <p style="color: Black; margin-right: 1%">
+            SHIELD Security Services (Pvt) Ltd was formed in October 2004 under Section-32 of the Companies Ordnance Act 1984 (XLVII of 1984) by a group of experienced independent security specialists, who have trained and gained their experience from service within the Armed forces, Police and Civilian security sector.<br>
+
+            The aim of SHIELD Security is to provide highly trained, professional, fully vetted and ensured security operatives and teams for an extensive range of specialized security services. Giving total security solutions to both the public and private sectors and ensuring that our clients receive a security and consultancy service second to none.<br>
+
+            Security specialists such as Close protection and VIP/Executive security officers are often referred to as "Bodyguards" but the modern day Close Protection officer needs to be more than just the old fashioned "Bodyguard". Executives, VIP’s and Media personalities no longer tolerate the stereotypical untrained "giant" when it comes to personal safety, requiring their personal security operatives to be well mannered, intelligent and able to discreetly deal with any situation should it arise.
+            “The Professionals” is committed to provide the full range of direct sales as Air Line Handlers, Travel Agent, Tours Operator, Cargo, Petroleum, Courier. We offer Consultancy services in the sector of Education, Immigration, Insurances brokerage. We are dedicated to contribute a professional and personalized services.
+        </p>
+    </div>
+    <div class="col-lg-3">
+        <img src="~/images/jobseeker.jpg" height="300" width="300" style="margin-top: 20%" />
+    </div>
+</div>
+
+
+
+@*
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i> Views</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+*@
+
+
+
+@*5th div*@
+    <div style="width:80%; height:500px; border-width:thick;margin-left:5%;margin-top:10%;margin-bottom:10%">
+        <h2 style=" margin-right:1%;margin-bottom:10%">Top Profile Views</h2>
+            <table>
+                @*<tr><td></td> <th class="col-lg-5" style="font-size:30px;" >Views of Top Profilers</th><td></td><td></td><td></td></tr>
+                *@
+                <tr>
+                    <td id="profile1" style="width:200px; height:200px;"><img src="~/images/profile1.jpg" style="height:200px;width:200px;border-radius:50%"> </td>
+                    <td><h1 style="margin-top:10px;text-align:center">Views</h1><p style="text-align:center">“The Professionals” is committed to provide the full range of direct sales as Air Line Handlers, Travel Agent, Tours Operator, Cargo, Petroleum, Courier. We offer Consultancy services in the sector of Education, Immigration, Insurances brokerage. We are dedicated to contribute a professional and personalized services.<br /></p></td>
+                    <td width="120px"></td>
+                    <td id="profile2" style="width:200px; height:200px;"><img src="~/images/profile2.jpg" style="height: 200px; width: 200px; border-radius: 50%"> </td>
+                    <td><h1 style="margin-top:0px;text-align:center">Views</h1><p style="text-align:center">“The Professionals” is committed to provide the full range of direct sales as Air Line Handlers, Travel Agent, Tours Operator, Cargo, Petroleum, Courier. We offer Consultancy services in the sector of Education, Immigration, Insurances brokerage. We are dedicated to contribute a professional and personalized services. <br /></p></td>
+                </tr>
+                <tr><td height="60px"></td></tr>
+                <tr>
+                    <td id="profile3" style="width:200px; height:200px;"><img src="~/images/profile3.jpg " style="height: 200px; width: 200px; border-radius: 50%"> </td>
+                    <td><h1 style="margin-top:0px;text-align:center">Views</h1><p style="text-align:center">“The Professionals” is committed to provide the full range of direct sales as Air Line Handlers, Travel Agent, Tours Operator, Cargo, Petroleum, Courier. We offer Consultancy services in the sector of Education, Immigration, Insurances brokerage. We are dedicated to contribute a professional and personalized services. <br /></p></td>
+                    <td width="120px"></td>
+                    <td id="profile4" style="width:200px; height:200px;"><img src="~/images/profile4.jpg " style="height: 200px; width: 200px; border-radius: 50%"> </td>
+                    <td><h1 style="margin-top:0px;text-align:center">Views</h1><p style="text-align:center">“The Professionals” is committed to provide the full range of direct sales as Air Line Handlers, Travel Agent, Tours Operator, Cargo, Petroleum, Courier. We offer Consultancy services in the sector of Education, Immigration, Insurances brokerage. We are dedicated to contribute a professional and personalized services.<br /></p></td>
+                </tr>
+
+            </table>
+</div>
+   
+
+
+
+
+
+    
+
+@RenderPage("~/Views/Home/PostJobModal.cshtml");

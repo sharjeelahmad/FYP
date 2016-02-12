@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Domestic Services Online", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Jobs", "AvailableJobs", "Home")</li>
+                    <li>@Html.ActionLink("Workers", "AvailableWorkers", "Home")</li>
+                    <li>@Html.ActionLink("Post Job", "PostJob", "Home")</li>
+                    @*<li>@Html.ActionLink("About", "About", "Home")</li>*@
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="row body-content">
+        <div class="row">
+            @RenderBody()
+        </div>
+        
+        <hr />
+        @*<footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>*@
+
+        <div style="background-color:black;border:dotted">
+            <br />
+            <footer class="bottom">
+                <div class="container">
+                    @*<div class="row text-center">*@   @*with class="row" page scrols horizontaly!!!*@
+                    <div class="col-md-4" @*style="border:dotted"*@>
+                        <h2>Getting to Know</h2>
+                        <p><span class="glyphicon glyphicon-chevron-right"> </span><a href="/Home/Contact"> COPYRIGHT</a></p>
+                        <p><span class="glyphicon glyphicon-chevron-right"> </span><a href="/Home/Contact"> HOW WE DO</a></p>
+                        <p><span class="glyphicon glyphicon-chevron-right"> </span><a href="/Home/Contact"> DELIEVERY PROCEDURE</a></p>
+                        <br /><br />
+                    </div>
+                    <div class="col-md-4" @*style="border:dotted"*@>
+                        <h2>Complains and Issues</h2>
+                        <p><span class="glyphicon glyphicon-chevron-right"> </span><a href="/Home/Complains"> COMPLAIN A ISSUE</a></p>
+                        <p><span class="glyphicon glyphicon-chevron-right"> </span><a href="/Home/Complains"> REPORT BUG</a></p>
+                        <br /><br /><br />
+                    </div>
+                    <div class="col-md-4" @*style="border:dotted"*@>
+                        <h2>NEWSLETTER</h2>
+                        <p>Want to see every product or <a href="#">Any Specific</a>? Subscribe to our mailing list to receive an update when any new items arrive!</p>
+                        <form class="row">
+                            <div class="col-sm-8">
+                                <input type="text" name="email" class="form-control" placeholder="Email Address" />
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="submit" name="Sign up" class="btn  btn-primary">Get Emails</button>
+                            </div>
+                        </form>
+                        <br />
+                        <p>Subscribed, But don't want to receive any more? Click here <a href="#">Unsubscibe</a></p>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+            </footer>
+        </div>
+
+
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
